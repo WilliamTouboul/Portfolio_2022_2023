@@ -572,6 +572,8 @@ h3 {
 
 .tabulation {
     color: transparent;
+    user-select: none;
+    pointer-events: none;
 }
 
 .about_inner_left .accroche {
@@ -1030,27 +1032,37 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
     padding: 4rem 2rem;
-    border-radius: 10px;
+    border-radius: .5rem;
     border: 1px var(--clr__3) solid;
     cursor: grab;
 }
 
-#modal_6 {
+#modal_1,
+#modal_2,
+#modal_3,
+#modal_4,
+#modal_5,
+#modal_6,
+#modal_7,
+#modal_8 {
     top: -200%;
     left: -200%;
 }
 
 .modal_title {
+    color: var(--clr__3);
     font-family: 'lacoste';
     align-self: center;
     font-size: 4rem;
 }
 
 .modal_description {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
     font-family: 'another';
     width: 80%;
     align-self: center;
+    color: var(--clr__3);
 }
 
 .modal_goto {
@@ -1062,8 +1074,8 @@ h3 {
     flex-direction: row;
     font-size: 2rem;
     font-family: 'another';
-    color: var(--clr__3);
-    background-color: var(--clr__1);
+    color: var(--clr__2);
+    background-color: var(--clr__3);
     margin-top: 2rem;
     transition: all .2s ease-in;
     cursor: pointer;
@@ -1077,11 +1089,17 @@ h3 {
 
 }
 
+.modal_goto:hover svg {
+    fill: var(--clr__1);
+    stroke: var(--clr__1);
+}
+
 .modal_goto svg {
     height: 2rem;
     width: 2rem;
     transform: rotate(180deg);
     margin-left: 2rem;
+    transition: color .2s
 }
 
 .close_modal {
@@ -1093,6 +1111,7 @@ h3 {
     align-items: center;
     font-family: 'another';
     border: 1px var(--clr__3) solid;
+    color: var(--clr__3);
     position: absolute;
     top: 2rem;
     right: 2rem;

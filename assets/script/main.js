@@ -49,87 +49,56 @@ gsap.to(sections, {
 /* -------------------------------------------------------------------------- */
 /*                              Drag & Drop Menu                              */
 /* -------------------------------------------------------------------------- */
-// let x = 0;
-// let y = 0;
+// members = document.querySelectorAll('.mover').forEach(item => {
+//     item.addEventListener('mousedown', ev => {
+//         console.log(ev);
+//         let tid;
+//         tid = ev.target.id;
+//         if (ev.target.id == "") {
+//             tid = ev.target.parentNode.id;
+//         }
+//         dragElement(document.getElementById(tid));
+//     })
+// })
 
-// const ele = document.getElementById('dragMe');
+// function dragElement(elmnt) {
+//     var pos1 = 0,
+//         pos2 = 0,
+//         pos3 = 0,
+//         pos4 = 0;
+//     if (document.getElementById(elmnt.id + 'header')) {
+//         document.getElementById(elmnt.id + 'header').onmousedown =
+//             dragMouseDown;
+//     } else {
+//         elmnt.onmousedown = dragMouseDown;
+//     }
 
-// const mouseDownHandler = function (e) {
-//     x = e.clientX;
-//     y = e.clientY;
-//     document.addEventListener('mousemove', mouseMoveHandler);
-//     document.addEventListener('mouseup', mouseUpHandler);
-//     console.log(ele.getBoundingClientRect());
-// };
+//     function dragMouseDown(e) {
+//         e = e || window.event;
+//         e.preventDefault();
+//         pos3 = e.clientX;
+//         pos4 = e.clientY;
+//         document.onmouseup = closeDragElement;
+//         document.onmousemove = elementDrag;
+//     }
 
-// const mouseMoveHandler = function (e) {
-//     const dx = e.clientX - x;
-//     const dy = e.clientY - y;
-//     ele.style.top = `${ele.offsetTop + dy}px`;
-//     ele.style.left = `${ele.offsetLeft + dx}px`;
-//     x = e.clientX;
-//     y = e.clientY;
-// };
+//     function elementDrag(e) {
+//         e = e || window.event;
+//         e.preventDefault();
+//         pos1 = pos3 - e.clientX;
+//         pos2 = pos4 - e.clientY;
+//         pos3 = e.clientX;
+//         pos4 = e.clientY;
+//         elmnt.style.top = elmnt.offsetTop - pos2 + 'px';
+//         elmnt.style.left = elmnt.offsetLeft - pos1 + 'px';
+//     }
 
-// const mouseUpHandler = function () {
-//     document.removeEventListener('mousemove', mouseMoveHandler);
-//     document.removeEventListener('mouseup', mouseUpHandler);
-// };
-
-// ele.addEventListener('mousedown', mouseDownHandler);
-
-
-
-members = document.querySelectorAll('.mover').forEach(item => {
-    item.addEventListener('mousedown', ev => {
-        console.log(ev);
-        let tid;
-        tid = ev.target.id;
-        if (ev.target.id == "") {
-            tid = ev.target.parentNode.id;
-        }
-        dragElement(document.getElementById(tid));
-    })
-})
-
-function dragElement(elmnt) {
-    var pos1 = 0,
-        pos2 = 0,
-        pos3 = 0,
-        pos4 = 0;
-    if (document.getElementById(elmnt.id + 'header')) {
-        document.getElementById(elmnt.id + 'header').onmousedown =
-            dragMouseDown;
-    } else {
-        elmnt.onmousedown = dragMouseDown;
-    }
-
-    function dragMouseDown(e) {
-        e = e || window.event;
-        e.preventDefault();
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        document.onmouseup = closeDragElement;
-        document.onmousemove = elementDrag;
-    }
-
-    function elementDrag(e) {
-        e = e || window.event;
-        e.preventDefault();
-        pos1 = pos3 - e.clientX;
-        pos2 = pos4 - e.clientY;
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        elmnt.style.top = elmnt.offsetTop - pos2 + 'px';
-        elmnt.style.left = elmnt.offsetLeft - pos1 + 'px';
-    }
-
-    function closeDragElement() {
-        /* stop moving when mouse button is released:*/
-        document.onmouseup = null;
-        document.onmousemove = null;
-    }
-}
+//     function closeDragElement() {
+//         /* stop moving when mouse button is released:*/
+//         document.onmouseup = null;
+//         document.onmousemove = null;
+//     }
+// }
 
 /* ------------------------------ Open & close ------------------------------ */
 let menu_open = true;
@@ -163,41 +132,50 @@ menu_close.addEventListener('click', function () {
     })
 })
 
-let modal_1_open = false;
-let modal_2_open = false;
-let modal_3_open = false;
-let modal_4_open = false;
-let modal_5_open = false;
-let modal_6_open = false;
 
-document.querySelector('.pf_6').addEventListener('click', function (e) {
-    console.log('d');
-    e.preventDefault();
-    if (!modal_6_open) {
-        modal_6_open = !modal_6_open;
-        gsap.to(
-            document.querySelector('#modal_6'), {
+let modal_open_1 = true;
+let modal_open_2 = true;
+let modal_open_3 = true;
+let modal_open_4 = true;
+let modal_open_5 = true;
+let modal_open_6 = true;
+let modal_open_7 = true;
+let modal_open_8 = true;
+
+for (i = 1; i <= 8; i++) {
+    let target_modal = 'modal_open_' + i
+    let close_modal = "#modal_" + i + " .close_modal"
+    let anim_target = '#modal_' + i
+
+    document.querySelector('.pf_' + i).addEventListener('click', function (e) {
+        e.preventDefault();
+        if (target_modal) {
+            target_modal = !target_modal;
+            gsap.to(anim_target, {
                 top: 2 + 'rem',
-                left: 5 + '%',
+                left: i++ + '%',
             })
-    } else {
-        modal_6_open = !modal_6_open;
-        gsap.to(
-            document.querySelector('#modal_6'), {
+        } else {
+            target_modal = !target_modal;
+            gsap.to(anim_target, {
                 top: -200 + '%',
                 left: -200 + '%'
             })
-    }
-})
+        }
+    });
 
-document.querySelector('#modal_6 .close_modal').addEventListener('click', function () {
-    modal_6_open = !modal_6_open;
-    gsap.to(
-        document.querySelector('#modal_6'), {
-            top: -200 + '%',
-            left: -200 + '%'
-        })
-})
+    document.querySelector(close_modal).addEventListener('click', function () {
+        target_modal = !target_modal;
+        gsap.to(
+            gsap.to(anim_target, {
+                top: -200 + '%',
+                left: -200 + '%'
+            })
+        );
+    })
+}
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                                Theme Picker                                */
