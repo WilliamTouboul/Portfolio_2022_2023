@@ -1,4 +1,4 @@
-@media (max-width: 450px) {
+@media (max-width: 790px) {
 
     html,
     body {
@@ -12,7 +12,6 @@
 
     .header_top_left h1 {
         font-size: 3rem;
-        /* width: 50vw; */
         margin-bottom: 3rem;
     }
 
@@ -50,18 +49,6 @@
     .menu {
         right: 2rem;
         top: 1rem;
-    }
-
-
-    .opened_menu {
-        height: 90vh;
-        width: 80vw;
-        top: 0;
-        left: 0;
-    }
-
-    .o_i_item p {
-        font-size: 1.2rem;
     }
 
     .banner {
@@ -184,4 +171,26 @@
         justify-content: center;
         align-items: center;
     }
+
+
+
+    .opened_menu {
+        height: 80vh;
+        width: 90vw;
+
+    }
+
+    .opened_inside {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0 2rem
+    }
+
+}
+
+
+@media (max-width : 1450px) {
+
 }
