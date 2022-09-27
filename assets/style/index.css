@@ -861,7 +861,7 @@ h3 {
 
 }
 
-.socials img {
+.socials svg {
     height: 2rem;
     width: 2rem;
     transform: rotate(180deg);
