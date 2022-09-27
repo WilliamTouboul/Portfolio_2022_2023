@@ -138,7 +138,6 @@ let menu_toggle = document.querySelector('.menu');
 let menu_text = document.querySelector('.menu .roller');
 let menu_close = document.querySelector('.close');
 
-
 menu_toggle.addEventListener('click', function () {
     if (menu_open) {
         menu_open = !menu_open;
@@ -164,7 +163,41 @@ menu_close.addEventListener('click', function () {
     })
 })
 
+let modal_1_open = false;
+let modal_2_open = false;
+let modal_3_open = false;
+let modal_4_open = false;
+let modal_5_open = false;
+let modal_6_open = false;
 
+document.querySelector('.pf_6').addEventListener('click', function (e) {
+    console.log('d');
+    e.preventDefault();
+    if (!modal_6_open) {
+        modal_6_open = !modal_6_open;
+        gsap.to(
+            document.querySelector('#modal_6'), {
+                top: 2 + 'rem',
+                left: 5 + '%',
+            })
+    } else {
+        modal_6_open = !modal_6_open;
+        gsap.to(
+            document.querySelector('#modal_6'), {
+                top: -200 + '%',
+                left: -200 + '%'
+            })
+    }
+})
+
+document.querySelector('#modal_6 .close_modal').addEventListener('click', function () {
+    modal_6_open = !modal_6_open;
+    gsap.to(
+        document.querySelector('#modal_6'), {
+            top: -200 + '%',
+            left: -200 + '%'
+        })
+})
 
 /* -------------------------------------------------------------------------- */
 /*                                Theme Picker                                */

@@ -1033,9 +1033,12 @@ h3 {
     border-radius: 10px;
     border: 1px var(--clr__3) solid;
     cursor: grab;
-
 }
 
+#modal_6 {
+    top: -200%;
+    left: -200%;
+}
 
 .modal_title {
     font-family: 'lacoste';
@@ -1059,17 +1062,19 @@ h3 {
     flex-direction: row;
     font-size: 2rem;
     font-family: 'another';
-    color: var(--clr__2);
-    background-color: var(--clr__3);
+    color: var(--clr__3);
+    background-color: var(--clr__1);
     margin-top: 2rem;
     transition: all .2s ease-in;
     cursor: pointer;
     align-self: center;
+    border: none;
 }
 
-.modal_goto:hover{
-    color: var(--clr__3);
-    background-color: var(--clr__1);
+.modal_goto:hover {
+    color: var(--clr__1);
+    background-color: var(--clr__3);
+
 }
 
 .modal_goto svg {
