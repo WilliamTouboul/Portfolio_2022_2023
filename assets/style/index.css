@@ -216,8 +216,8 @@ h3 {
 
 .opened_menu {
     position: fixed;
-    height: 80vh;
-    width: 26vw;
+    height: 75rem;
+    width: 50rem;
     top: -200%;
     right: -200%;
     border-radius: 10px;
@@ -289,15 +289,19 @@ h3 {
     margin-right: 2rem;
 }
 
-.opened_menu img {
+.opened_menu svg {
     transition: all .5s;
-    filter: invert(88%) saturate(0%) contrast(100%);
 }
 
-.opened_menu .o_i_item img {
+.opened_menu .o_i_item svg {
     transform: rotate(180deg);
     height: 3rem;
     width: 3rem;
+    fill: var(--clr__3);
+}
+
+.o_i_item:hover svg path {
+    fill: var(--clr__2);
 }
 
 .o_i_item:hover .bg {
@@ -308,9 +312,6 @@ h3 {
     color: var(--clr__2)
 }
 
-.o_i_item:hover img {
-    filter: none
-}
 
 
 .color_pickers {
@@ -593,7 +594,7 @@ h3 {
     cursor: pointer;
 }
 
-.more_infos img {
+.more_infos svg {
     height: 2rem;
     width: 2rem;
     transform: rotate(180deg);

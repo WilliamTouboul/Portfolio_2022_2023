@@ -52,6 +52,18 @@
         top: 1rem;
     }
 
+
+    .opened_menu {
+        height: 90vh;
+        width: 80vw;
+        top: 0;
+        left: 0;
+    }
+
+    .o_i_item p {
+        font-size: 1.2rem;
+    }
+
     .banner {
         display: block;
         width: calc(100vw - 40px);
