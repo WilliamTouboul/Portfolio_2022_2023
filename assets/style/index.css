@@ -701,12 +701,35 @@ h3 {
     background-size: cover;
     background-position: center center;
     flex-shrink: 0;
-    font-size: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red;
 }
+
+.gallery_item:first-child {
+    background-image: url(../img/slider/slider1.jpg);
+}
+
+.gallery_item:nth-child(2) {
+    background-image: url(../img/slider/slider2.jpg);
+}
+
+.gallery_item:nth-child(3) {
+    background-image: url(../img/slider/slider3.jpg);
+}
+
+.gallery_item:nth-child(4) {
+    background-image: url(../img/slider/slider4.jpg);
+}
+
+.gallery_item:nth-child(5) {
+    background-image: url(../img/slider/slider5.jpg);
+}
+
+.gallery_item:nth-child(6) {
+    background-image: url(../img/slider/slider6.jpg);
+}
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -782,6 +805,7 @@ h3 {
     font-family: 'another';
     font-size: 1.2rem;
     margin-left: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .pf_grid_item .bg {
@@ -1157,4 +1181,8 @@ h3 {
 .title_section p {
     display: flex;
     flex-direction: row;
+}
+
+.inner_contact_text {
+    width: 60%;
 }
