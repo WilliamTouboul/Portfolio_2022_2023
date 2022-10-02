@@ -192,5 +192,7 @@
 
 
 @media (max-width : 1450px) {
-
+    .modal_project {
+        width: 32rem;
+    }
 }
