@@ -45,82 +45,33 @@ gsap.to(sections, {
 });
 
 
-
-/* -------------------------------------------------------------------------- */
-/*                              Drag & Drop Menu                              */
-/* -------------------------------------------------------------------------- */
-// members = document.querySelectorAll('.mover').forEach(item => {
-//     item.addEventListener('mousedown', ev => {
-//         console.log(ev);
-//         let tid;
-//         tid = ev.target.id;
-//         if (ev.target.id == "") {
-//             tid = ev.target.parentNode.id;
-//         }
-//         dragElement(document.getElementById(tid));
-//     })
-// })
-
-// function dragElement(elmnt) {
-//     var pos1 = 0,
-//         pos2 = 0,
-//         pos3 = 0,
-//         pos4 = 0;
-//     if (document.getElementById(elmnt.id + 'header')) {
-//         document.getElementById(elmnt.id + 'header').onmousedown =
-//             dragMouseDown;
-//     } else {
-//         elmnt.onmousedown = dragMouseDown;
-//     }
-
-//     function dragMouseDown(e) {
-//         e = e || window.event;
-//         e.preventDefault();
-//         pos3 = e.clientX;
-//         pos4 = e.clientY;
-//         document.onmouseup = closeDragElement;
-//         document.onmousemove = elementDrag;
-//     }
-
-//     function elementDrag(e) {
-//         e = e || window.event;
-//         e.preventDefault();
-//         pos1 = pos3 - e.clientX;
-//         pos2 = pos4 - e.clientY;
-//         pos3 = e.clientX;
-//         pos4 = e.clientY;
-//         elmnt.style.top = elmnt.offsetTop - pos2 + 'px';
-//         elmnt.style.left = elmnt.offsetLeft - pos1 + 'px';
-//     }
-
-//     function closeDragElement() {
-//         /* stop moving when mouse button is released:*/
-//         document.onmouseup = null;
-//         document.onmousemove = null;
-//     }
-// }
-
 /* ------------------------------ Open & close ------------------------------ */
 let menu_open = true;
 let opened_menu = document.querySelector('.opened_menu');
 let menu_toggle = document.querySelector('.menu');
 let menu_text = document.querySelector('.menu .roller');
 let menu_close = document.querySelector('.close');
+let inside_link = document.querySelectorAll('.o_i_item .left ')
 
 menu_toggle.addEventListener('click', function () {
     if (menu_open) {
+        
         menu_open = !menu_open;
+
         gsap.to(opened_menu, {
             top: 2 + 'rem',
             left: 50 + '%',
             transform: 'translateX(-50%)'
         })
+
     } else {
+
         menu_open = !menu_open;
+
         gsap.to(opened_menu, {
             top: -200 + '%',
-            left: 200 + '%'
         })
+
     }
 })
 
@@ -146,7 +97,6 @@ for (i = 1; i <= 8; i++) {
     let target_modal = 'modal_open_' + i
     let close_modal = "#modal_" + i + " .close_modal"
     let anim_target = '#modal_' + i
-
     document.querySelector('.pf_' + i).addEventListener('click', function (e) {
         e.preventDefault();
         if (target_modal) {
@@ -155,6 +105,7 @@ for (i = 1; i <= 8; i++) {
                 top: 2 + 'rem',
                 left: i++ + '%',
             })
+
         } else {
             target_modal = !target_modal;
             gsap.to(anim_target, {

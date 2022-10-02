@@ -226,7 +226,7 @@ h3 {
     height: 43rem;
     width: 80rem;
     top: -200%;
-    right: -200%;
+
     border-radius: 10px;
     background-color: var(--clr__2);
     z-index: 999999999;
@@ -291,7 +291,8 @@ h3 {
     font-size: 1.5rem;
     font-family: 'another';
     color: var(--clr__3);
-    transition: all .5s
+    transition: all .5s;
+
 }
 
 .o_i_item p span {
@@ -435,6 +436,8 @@ h3 {
 .header_top_left h1 {
     font-size: 10rem;
     font-family: 'another';
+    display: flex;
+    flex-direction: row;
 }
 
 .title_section p,
@@ -1047,6 +1050,8 @@ h3 {
 #modal_8 {
     top: -200%;
     left: -200%;
+    z-index: 999999982;
+
 }
 
 .modal_title {
@@ -1125,4 +1130,31 @@ h3 {
     color: var(--clr__2);
     cursor: pointer;
 
+}
+
+
+
+
+.anim_title {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.anim_title .letter_wrapper {
+    position: absolute;
+
+}
+
+.lw_2 {
+    margin-left: 20px;
+}
+
+.l_2 {
+    margin-left: 24px;
+}
+
+.title_section p {
+    display: flex;
+    flex-direction: row;
 }

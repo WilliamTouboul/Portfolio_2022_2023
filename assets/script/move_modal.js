@@ -275,4 +275,21 @@
 
     ele.addEventListener('mousedown', mouseDownHandler);
 
+
+
+
+
+
+    let all_modal_z = document.querySelectorAll('.modal_project');
+    all_modal_z.forEach((item, intex) => {
+        item.addEventListener('click', function (e) {
+            all_modal_z.forEach((item, index) => {
+                item.style.zIndex = 999999982;
+            })
+
+            item.style.zIndex = 999999985;
+        })
+
+    })
+
 }
