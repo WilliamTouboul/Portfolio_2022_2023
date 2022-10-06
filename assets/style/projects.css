@@ -1,0 +1,74 @@
+.proj_back {
+    right: 4rem;
+}
+
+.proj_h1 {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    font-family: 'another';
+    font-size: 3rem;
+}
+
+.marquee {
+    top: 16rem;
+}
+
+.projects_main {
+    width: 100vw;
+    min-height: 100vh;
+    margin-top: 52vh;
+}
+
+.proj_banner {
+    width: calc(100% - 8rem);
+    margin: auto;
+    margin-left: 4rem;
+    height: 35rem;
+    object-fit: cover;
+}
+
+.img_row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.img_row img {
+    width: 49%;
+}
+
+.quote_container {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote_container p {
+    font-size: 3rem;
+    font-family: 'another';
+    width: 25%;
+    text-align: center;
+}
+
+strong {
+    color: var(--clr__2);
+}
+
+.last_image {
+    width: calc(100% - 8rem);
+    margin-left: 4rem;
+    height: 25vh;
+    object-fit: cover;
+    margin-bottom: 4rem;
+}
+
+.footer {
+    border-top: 1px var(--clr__1) solid;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}

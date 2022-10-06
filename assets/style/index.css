@@ -71,35 +71,6 @@ h3 {
     user-select: none;
 }
 
-.projecteur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-70%, -40%);
-    background-color: var(--clr__1);
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    filter: blur(110px);
-    opacity: .05;
-    pointer-events: none;
-}
-
-.projecteur_2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    background-color: var(--clr__2);
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    filter: blur(60px);
-    opacity: .05;
-    pointer-events: none;
-}
-
-
 @keyframes bg-animation {
     0% {
         transform: translate(0, 0);
@@ -1172,7 +1143,7 @@ h3 {
 /* -------------------------------------------------------------------------- */
 
 .modal_project {
-    background-color: var(--clr__2);
+    background-color: var(--clr__3);
     position: fixed;
     height: 50rem;
     width: 40rem;
@@ -1183,7 +1154,7 @@ h3 {
     justify-content: space-around;
     padding: 4rem 2rem;
     border-radius: .5rem;
-    border: 1px var(--clr__3) solid;
+    border: 1px var(--clr__2) solid;
     cursor: grab;
 }
 
@@ -1202,7 +1173,7 @@ h3 {
 }
 
 .modal_title {
-    color: var(--clr__3);
+    color: var(--clr__2);
     font-family: 'lacoste';
     align-self: center;
     font-size: 4rem;
@@ -1210,11 +1181,11 @@ h3 {
 
 .modal_description {
     font-size: 1.8rem;
-    text-align: center;
+    text-align: left;
     font-family: 'another';
     width: 80%;
     align-self: center;
-    color: var(--clr__3);
+    color: var(--clr__2);
 }
 
 .modal_goto {
@@ -1226,8 +1197,8 @@ h3 {
     flex-direction: row;
     font-size: 2rem;
     font-family: 'another';
-    color: var(--clr__2);
-    background-color: var(--clr__3);
+    color: var(--clr__3);
+    background-color: var(--clr__2);
     margin-top: 2rem;
     transition: all .2s ease-in;
     cursor: pointer;
@@ -1236,14 +1207,19 @@ h3 {
 }
 
 .modal_goto:hover {
-    color: var(--clr__1);
+    color: var(--clr__2);
     background-color: var(--clr__3);
-
+    border: var(--clr__2) 1px solid;
 }
 
-.modal_goto:hover svg {
-    fill: var(--clr__1);
-    stroke: var(--clr__1);
+.modal_goto svg path {
+    fill: var(--clr__3);
+    color: var(--clr__3);
+}
+
+.modal_goto:hover svg path {
+    fill: var(--clr__2);
+    stroke: var(--clr__2);
 }
 
 .modal_goto svg {
@@ -1262,8 +1238,8 @@ h3 {
     justify-content: center;
     align-items: center;
     font-family: 'another';
-    border: 1px var(--clr__3) solid;
-    color: var(--clr__3);
+    border: 1px var(--clr__2) solid;
+    color: var(--clr__2);
     position: absolute;
     top: 2rem;
     right: 2rem;
@@ -1272,9 +1248,9 @@ h3 {
 
 
 .close_modal:hover {
-    border: 1px var(--clr__2) solid;
+    border: 1px var(--clr__1) solid;
     background-color: var(--clr__3);
-    color: var(--clr__2);
+    color: var(--clr__1);
     cursor: pointer;
 
 }
