@@ -191,6 +191,32 @@
     .inner_contact_text {
         width: 100%;
     }
+
+    .chinese {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+    .services_card_container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .services_inner {
+        padding-left: 0;
+    }
+
+    .services_card {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .services_card h3{
+        font-size: 3rem;
+    }
+    .services_card p{
+        font-size: 1.5rem;
+    }
 }
 
 

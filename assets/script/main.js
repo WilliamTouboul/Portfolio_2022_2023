@@ -55,7 +55,7 @@ let inside_link = document.querySelectorAll('.o_i_item .left ')
 
 menu_toggle.addEventListener('click', function () {
     if (menu_open) {
-        
+
         menu_open = !menu_open;
 
         gsap.to(opened_menu, {
@@ -146,10 +146,10 @@ picker_1.addEventListener('click', function () {
     document.documentElement.style.setProperty('--clr__3', ' #081820');
 
     recolor_svg_stroke.forEach((item, index) => {
-        item.style.stroke = '#000000'
+        item.style.stroke = '#E0F8D0'
     });
     recolor_svg.forEach((item, index) => {
-        item.style.fill = '#E46E00'
+        item.style.fill = '#88c070'
     })
 })
 
