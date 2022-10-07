@@ -15,6 +15,10 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    image-rendering:optimizeQuality;
+}
+
 :root {
     --clr__1: #E0F8D0;
     --clr__2: #88c070;
@@ -813,11 +817,11 @@ h3 {
 }
 
 .gallery_item:nth-child(4) {
-    background-image: url(../img/slider/slider4.jpg);
+    background-image: url(../img/projects/glry/maing.jpg);
 }
 
 .gallery_item:nth-child(5) {
-    background-image: url(../img/slider/slider5.jpg);
+    background-image: url(../img/projects/softlybrutal/main.jpg);
 }
 
 .gallery_item:nth-child(6) {
