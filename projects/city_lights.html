@@ -88,9 +88,9 @@
 
         <div class="img_row">
 
-            <img src="../assets/img/projects/citylights/Home_Bangkok.jpg" alt="">
+            <img class="img_cl" src="../assets/img/projects/citylights/Home_Bangkok.jpg" alt="">
 
-            <img src="../assets/img/projects/citylights/Home_Tokyo.jpg" alt="">
+            <img class="img_cl" src="../assets/img/projects/citylights/Home_Tokyo.jpg" alt="">
 
         </div>
 
@@ -112,7 +112,7 @@
 
 
         <div class="img_row">
-            <img class="cl_large" src="../assets/img/projects/citylights/bottomhero.JPG" alt="">
+            <img class="cl_large " src="../assets/img/projects/citylights/bottomhero.JPG" alt="">
 
             <div class="img_row_text">
                 <p>
@@ -156,6 +156,19 @@
     <!-- <script src="assets/script/main.js"></script> -->
     <script src="../assets/script/return.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ukiyojs@3.0.3/dist/ukiyo.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to('.img_cl', {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            duration: 1,
+            ease: Power4.out,
+            scrollTrigger: {
+                trigger: '.img_row',
+                end: 'bottom 70%',
+            }
+        });
+    </script>
 </body>
 
 </html>

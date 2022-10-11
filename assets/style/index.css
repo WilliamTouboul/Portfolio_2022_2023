@@ -16,7 +16,7 @@ body {
 }
 
 img {
-    image-rendering:optimizeQuality;
+    image-rendering: optimizeQuality;
 }
 
 :root {
@@ -53,8 +53,6 @@ h3 {
     color: var(--clr__1);
     font-weight: 400;
 }
-
-
 
 .noise_animation {
     position: fixed;
@@ -1160,6 +1158,11 @@ h3 {
     border-radius: .5rem;
     border: 1px var(--clr__2) solid;
     cursor: grab;
+
+}
+
+.modal_project img {
+    display: none;
 }
 
 #modal_1,
@@ -1173,8 +1176,68 @@ h3 {
     top: -200%;
     left: -200%;
     z-index: 999999982;
+    background-position: center center;
 
 }
+
+.cover_modal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(13, 14, 13);
+    z-index: -1;
+    opacity: .6;
+}
+
+#modal_1 {
+    background-image: url('../img/projects/noise/Frame4.jpg');
+    background-position: 20% 0%;
+}
+
+#modal_1 .cover_modal {
+    opacity: .15
+}
+
+#modal_2 {
+    background-image: url('../img/projects/citylights/grid.jpg');
+    background-size: cover;
+}
+
+#modal_2 .cover_modal {
+    opacity: .75;
+}
+
+#modal_4 {
+    background-image: url('../img/projects/softlybrutal/main.jpg');
+    background-size: cover;
+}
+
+#modal_4 .cover_modal {
+    opacity: .75;
+}
+
+#modal_5 {
+    background-image: url('../img/projects/silkykiss/modalbg.jpg');
+    background-size: cover;
+}
+
+#modal_6 {
+    background-image: url('../img/projects/glry/maing.jpg');
+    background-size: cover;
+}
+
+#modal_6 .cover_modal {
+    opacity: .75;
+}
+
+#modal_7 {
+    background-image: url('../img/projects/tsb/main.jpg')
+}
+
 
 .modal_title {
     color: var(--clr__2);
@@ -1288,4 +1351,21 @@ h3 {
 
 .inner_contact_text {
     width: 60%;
+}
+
+.img_cl {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+
+}
+
+.img_glry {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    animation: reveal_images .8s linear forwards;
+}
+
+
+
+.gundam {
+    width: 50vw !important;
+    margin-left: 25vw !important;
 }

@@ -14,8 +14,6 @@ all_roller.forEach((item, index) => {
 
 let container = document.querySelector('.gallery')
 
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 const sections = gsap.utils.toArray(".gallery_item");
@@ -24,13 +22,11 @@ let maxWidth = 0;
 const getMaxWidth = () => {
     maxWidth = 0;
     sections.forEach((section) => {
-        maxWidth += section.offsetWidth + 100;
-
+        maxWidth += section.offsetWidth + 110;
     });
 };
 
 getMaxWidth();
-
 
 gsap.to(sections, {
     x: () => `-${maxWidth - window.innerWidth}`,
@@ -40,7 +36,7 @@ gsap.to(sections, {
         pin: true,
         scrub: true,
         snap: 1 / (sections.length - 1),
-        end: 'bottom',
+        end: 'bottom 0%',
     }
 });
 
@@ -198,6 +194,7 @@ picker_3.addEventListener('click', function () {
 
 
 let selected_links = document.querySelectorAll('.link_transition');
+
 selected_links.forEach((item, index) => {
     item.addEventListener('click', function (e) {
         e.preventDefault();

@@ -138,10 +138,22 @@ strong {
     margin-bottom: 12rem;
 }
 
-.banner_sfb {
-    object-fit: contain;
+.img_sk {
+    width: 48% !important;
 }
 
+.row_sk {
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+}
+
+.sk_palette {
+    width: calc(100% - 8rem);
+    margin-left: 4rem;
+    margin-bottom: 12rem;
+}
+
+/* ------------------------------- media query ------------------------------ */
 @media (max-width: 790px) {
 
     #main_img,
@@ -151,7 +163,9 @@ strong {
     }
 
 
-
+    .banner_sfb {
+        object-fit: contain;
+    }
 
     .marquee {
         height: 10rem;
