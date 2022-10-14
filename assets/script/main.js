@@ -12,34 +12,20 @@ all_roller.forEach((item, index) => {
     })
 })
 
-let container = document.querySelector('.gallery')
 
 gsap.registerPlugin(ScrollTrigger);
 
-const sections = gsap.utils.toArray(".gallery_item");
-let maxWidth = 0;
-
-const getMaxWidth = () => {
-    maxWidth = 0;
-    sections.forEach((section) => {
-        maxWidth += section.offsetWidth + 110;
-    });
-};
-
-getMaxWidth();
-
-gsap.to(sections, {
-    x: () => `-${maxWidth - window.innerWidth}`,
-    ease: "none",
+gsap.to('.header_fiesta', {
+    width: 100 + 'vw',
+    height: 100 + 'vh',
+    y: -200,
     scrollTrigger: {
-        trigger: ".gallery",
-        pin: true,
+        trigger: '.header_fiesta',
         scrub: true,
-        snap: 1 / (sections.length - 1),
-        end: 'bottom 0%',
+        start: 'top bottom',
+        end: 'top 20%'
     }
-});
-
+})
 
 /* ------------------------------ Open & close ------------------------------ */
 let menu_open = true;

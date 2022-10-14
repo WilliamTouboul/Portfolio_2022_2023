@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Touboul | Web Designer | UI/UX Designer | Branding</title>
+    <link rel="stylesheet" href="assets/style/index.css">
+    <link rel="stylesheet" href="assets/style/responsive.css">
+    <link rel="icon" href="assets/icons/rect.svg" type="image/png">
+    <link rel="stylesheet" href="assets/style/v2.css">
+</head>
+
+<body>
+    <div class="noise_animation"></div>
+
+    <h1 class="name_nav">
+        <a href="index2.html">William Touboul</a>
+    </h1>
+
+    <div class="menu">
+        <p class="roller">Menu</p>
+        <svg class="menu_corner mc_1" width="15" height="12" viewBox="0 0 15 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="1" y1="0.5" x2="14.7926" y2="0.5" stroke="var(--clr__1)" />
+            <line x1="0.5" y1="12" x2="0.5" stroke="var(--clr__1)" />
+        </svg>
+
+        <svg class="menu_corner mc_2" width="15" height="12" viewBox="0 0 15 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.5" x2="13.7926" y2="-0.5" transform="matrix(1 0 0 -1 1 11)" stroke="var(--clr__1)" />
+            <line y1="-0.5" x2="12" y2="-0.5" transform="matrix(0 1 1 0 1 0)" stroke="var(--clr__1)" />
+        </svg>
+
+        <svg class="menu_corner mc_3" width="15" height="12" viewBox="0 0 15 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.5" x2="13.7926" y2="-0.5" transform="matrix(-1 0 0 1 14 1)" stroke="var(--clr__1)" />
+            <line y1="-0.5" x2="12" y2="-0.5" transform="matrix(0 -1 -1 0 14 12)" stroke="var(--clr__1)" />
+        </svg>
+
+        <svg class="menu_corner mc_4" width="15" height="12" viewBox="0 0 15 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="14" y1="11.5" x2="0.207407" y2="11.5" stroke="var(--clr__1)" />
+            <line x1="14.5" x2="14.5" y2="12" stroke="var(--clr__1)" />
+        </svg>
+    </div>
+
+    <div class="opened_menu mover" id="dragMe">
+        <svg class="menu_corner mc_1" width="15" height="12" viewBox="0 0 15 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="1" y1="0.5" x2="14.7926" y2="0.5" stroke="var(--clr_3)" />
+            <line x1="0.5" y1="12" x2="0.5" stroke="var(--clr_3)" />
+        </svg>
+
+        <svg class="menu_corner mc_2" width="15" height="12" viewBox="0 0 15 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.5" x2="13.7926" y2="-0.5" transform="matrix(1 0 0 -1 1 11)" stroke="var(--clr_3)" />
+            <line y1="-0.5" x2="12" y2="-0.5" transform="matrix(0 1 1 0 1 0)" stroke="var(--clr_3)" />
+        </svg>
+
+        <svg class="menu_corner mc_3" width="15" height="12" viewBox="0 0 15 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.5" x2="13.7926" y2="-0.5" transform="matrix(-1 0 0 1 14 1)" stroke="var(--clr_3)" />
+            <line y1="-0.5" x2="12" y2="-0.5" transform="matrix(0 -1 -1 0 14 12)" stroke="var(--clr_3)" />
+        </svg>
+
+        <svg class="menu_corner mc_4" width="15" height="12" viewBox="0 0 15 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="14" y1="11.5" x2="0.207407" y2="11.5" stroke="var(--clr_3)" />
+            <line x1="14.5" x2="14.5" y2="12" stroke="var(--clr_3)" />
+        </svg>
+
+        <p class="roller">Menu</p>
+
+        <div class="opened_inside">
+            <a href="#home" class="o_i_item">
+                <div class="bg"></div>
+                <p class="left">
+                    <span>01.</span>
+                    ACCUEIL
+                </p>
+
+                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                        fill="var(--clr__3)" />
+                </svg>
+            </a>
+
+            <a href="#about" class="o_i_item">
+                <div class="bg"></div>
+                <p class="left">
+                    <span>02.</span>
+                    A PROPOS
+                </p>
+
+                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                        fill="var(--clr__3)" />
+                </svg>
+            </a>
+
+            <a href="#services" class="o_i_item">
+                <div class="bg"></div>
+                <p class="left">
+                    <span>03.</span>
+                    SERVICES
+                </p>
+
+                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                        fill="var(--clr__3)" />
+                </svg>
+            </a>
+
+            <a href="#gallery" class="o_i_item">
+                <div class="bg"></div>
+
+                <p class="left">
+                    <span>04.</span>
+                    GALERIE
+                </p>
+
+                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                        fill="var(--clr__3)" />
+                </svg>
+            </a>
+
+            <a href="#portfolio" class="o_i_item">
+                <div class="bg"></div>
+
+                <p class="left">
+                    <span>05.</span>
+                    PORTFOLIO
+                </p>
+
+                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                        fill="var(--clr__3)" />
+                </svg>
+            </a>
+            <a href="#contact" class="o_i_item">
+                <div class="bg"></div>
+
+                <p class="left">
+                    <span>06.</span>
+                    CONTACT
+                </p>
+                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                        fill="var(--clr__3)" />
+                </svg>
+            </a>
+
+            <div class="close">
+                X
+            </div>
+        </div>
+
+        <div class="color_pickers">
+            <div class="picker picker_1"></div>
+            <div class="picker picker_2"></div>
+            <div class="picker picker_3"></div>
+        </div>
+
+        <div class="menu_socials">
+            <div><a href="#">Instagram</a></div>
+            <div><a href="#">Behance</a></div>
+            <div><a href="#">Dribbble</a></div>
+        </div>
+
+    </div>
+
+    <div class="big_title_wrapper">
+        <h2 class="big_title">WEB DESIGN</h2>
+    </div>
+
+
+
+    <div class="header_img">
+    </div>
+
+    <div class="header"></div>
+
+    <div class="true_header_container">
+
+        <p class="bienvenue">Bienvenue</p>
+
+        <div class="container_main_header">
+            <div class="line_container">
+                <div class="header_line">
+                    <svg width="50" height="50" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="96" height="96" fill="#88C070" class="will_recolor" />
+                    </svg>
+                    <p>UI/UX</p>
+                </div>
+                <div class="header_line">
+                    <svg width="50" height="50" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="96" height="96" fill="#88C070" class="will_recolor" />
+                    </svg>
+                    <p>Web Design</p>
+                </div>
+
+                <div class="header_line">
+                    <svg width="50" height="50" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="96" height="96" fill="#88C070" class="will_recolor" />
+                    </svg>
+                    <p>Identités visuelles</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee" id="snap_1">
+        <svg class="dashed_line" d width="1841" height="2" viewBox="0 0 1841 2" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="8.74228e-08" y1="1" x2="1841" y2="1.00016" stroke="#E0F8D0" stroke-width="2"
+                stroke-dasharray="3 3" class="will_recolor_stroke" />
+        </svg>
+        <section class="container_marquee">
+            <p class="title_marquee">
+                PORTFOLIO
+                <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="96" height="96" fill="#88C070" class="will_recolor" />
+                </svg>
+                PORTFOLIO
+                <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="96" height="96" fill="#88C070" class="will_recolor" />
+                </svg>
+                PORTFOLIO
+                <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="96" height="96" fill="#88C070" class="will_recolor" />
+                </svg>
+                PORTFOLIO
+            </p>
+        </section>
+        <svg class="dashed_line" d width="1841" height="2" viewBox="0 0 1841 2" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="8.74228e-08" y1="1" x2="1841" y2="1.00016" stroke="#E0F8D0" stroke-width="2"
+                stroke-dasharray="3 3" class="will_recolor_stroke" />
+        </svg>
+    </div>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  main                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class="container_about" id="about">
+        <div class="section_title">
+            <div class="section_title_left">
+                <p>02.</p>
+            </div>
+
+            <div class="section_title_right">
+                <h2>A propos<span>*</span></h2>
+            </div>
+        </div>
+
+        <div class="about_inner">
+            <div class="about_inner_left">
+                <h2>Mon parcours</h2>
+                <p>
+                    <span class="tabulation">________</span>Web Designer et Web
+                    developpeur, basé en France, plus précisement au Havre.
+                    Je suis formé aussi bien en design qu'en développement et je suis a même de vous accompagner, vous
+                    et votre
+                    projet, dans toutes les étapes de sa création. Identité visuelle, site web, et tout autre support de
+                    création, mes compétences me permettent de creer et mettre en place toutes les solutions
+                    que nous aurons imaginer, réduisant ainsi drastiquement le nombre d'intervenant sur vos projets.
+                </p>
+                <h2>Mon objectif : Vos valeurs</h2>
+                <p><span class="tabulation">________</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nulla, consequuntur adipisci totam iste
+                    corrupti ab debitis, optio mollitia reiciendis quo praesentium nam incidunt eveniet, eos ea
+                    temporibus illo fuga ducimus?</p>
+            </div>
+
+            <div class="about_down">
+                <div class="about_inner_right">
+                    <h3>Skills</h3>
+                    <div class="tech_tabs">
+                        <p class="roller">UI/UX Design</p>
+                        <p class="roller">Web Design</p>
+                        <p class="roller">Graphic Design</p>
+                        <p class="roller">Intégration</p>
+                        <p class="roller">Wordpress</p>
+                        <p class="roller">Maquettage</p>
+                        <p class="roller">Graphiste</p>
+                        <p class="roller">Maintenance</p>
+                        <p class="roller">Audit & optimisation SEO</p>
+                        <p class="roller">Packaging</p>
+                        <p class="roller">Print</p>
+                    </div>
+                </div>
+                <div class="illus_about"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_about container_services" id="services">
+
+        <div class="section_title">
+            <div class="section_title_left">
+                <p>03.</p>
+            </div>
+
+            <div class="section_title_right galery_right">
+                <h2>Services<span>*</span></h2>
+            </div>
+        </div>
+
+        <div class="services_inner">
+            <div class="card_services">
+                <div class="s_left">
+                    <h4>Web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut facere voluptate magnam.</p>
+                    <a href="#">
+                        Voir plus
+                        <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                                fill="var(--clr__2)" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="s_right">
+
+                </div>
+            </div>
+
+            <div class="card_services">
+                <div class="s_left">
+                    <h4>Print</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut facere voluptate magnam.</p>
+                    <a href="#">
+                        Voir plus
+                        <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                                fill="var(--clr__2)" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="s_right">
+
+                </div>
+            </div>
+
+            <div class="card_services">
+                <div class="s_left">
+                    <h4>Création d'identités visuelles</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut facere voluptate magnam.</p>
+                    <a href="#">
+                        Voir plus
+                        <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                                fill="var(--clr__2)" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="s_right">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_portfolio" id="portfolio">
+
+        <div class="section_title">
+            <div class="section_title_left">
+                <p>05.</p>
+            </div>
+
+            <div class="section_title_right">
+                <h2>Portfolio<span>*</span></h2>
+            </div>
+        </div>
+
+        <div class="section_inner_portfolio">
+            <p>
+                <span class="tabulation">________</span> De site vitrine a applications mobile, je suis capable de
+                deployer une variété de solutions digitales pour vous épauler dans votre projets, pour voir de
+                précédents travaux c'est par ici :
+            </p>
+            <div class="pf_grid">
+
+                <a href="#" class="pf_grid_item pf_1">
+                    <div class="bg"></div>
+                    <div class="item_text">
+                        <p class="roller">NOISE</p>
+                        <p class="category">Branding & Dev</p>
+                    </div>
+
+                    <svg class="more_hover" width="39" height="41" viewBox="0 0 39 41" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.4872 17.5351H39V23.5496H22.4872V41H16.5128V23.5496H0V17.5351H16.5128V0H22.4872V17.5351Z"
+                            fill="var(--clr__3)" />
+                    </svg>
+                    <svg class="more_not_hover" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.84 23.28H34.8V26.12H26.84V34.36H23.96V26.12H16V23.28H23.96V15H26.84V23.28Z"
+                            fill="var(--clr__1)" />
+                        <rect x="0.5" y="0.5" width="49" height="49" stroke="var(--clr__1)" />
+                    </svg>
+                </a>
+
+                <a href="#" class="pf_grid_item pf_2">
+                    <div class="bg"></div>
+                    <div class="item_text">
+                        <p class="roller">City Lights</p>
+                        <p class="category">Web Design</p>
+                    </div>
+                    <svg class="more_hover" width="39" height="41" viewBox="0 0 39 41" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.4872 17.5351H39V23.5496H22.4872V41H16.5128V23.5496H0V17.5351H16.5128V0H22.4872V17.5351Z"
+                            fill="var(--clr__3)" />
+                    </svg>
+                    <svg class="more_not_hover" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.84 23.28H34.8V26.12H26.84V34.36H23.96V26.12H16V23.28H23.96V15H26.84V23.28Z"
+                            fill="var(--clr__1)" />
+                        <rect x="0.5" y="0.5" width="49" height="49" stroke="var(--clr__1)" />
+                    </svg>
+                </a>
+
+                <div class="pf_3" style="display:none"></div>
+                <!-- <a href="#" class="pf_grid_item pf_3">
+                    <div class="bg"></div>
+                    <div class="item_text">
+                        <p class="roller">EMERGENCE</p>
+                        <p class="category">Branding</p>
+                    </div>
+                    <svg class="more_hover" width="39" height="41" viewBox="0 0 39 41" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.4872 17.5351H39V23.5496H22.4872V41H16.5128V23.5496H0V17.5351H16.5128V0H22.4872V17.5351Z"
+                            fill="var(--clr__3)" />
+                    </svg>
+                    <svg class="more_not_hover" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.84 23.28H34.8V26.12H26.84V34.36H23.96V26.12H16V23.28H23.96V15H26.84V23.28Z"
+                            fill="var(--clr__1)" />
+                        <rect x="0.5" y="0.5" width="49" height="49" stroke="var(--clr__1)" />
+                    </svg>
+                </a> -->
+
+                <a href="#" class="pf_grid_item pf_4">
+                    <div class="bg"></div>
+                    <div class="item_text">
+                        <p class="roller">Softly Brutal</p>
+                        <p class="category">Web Design</p>
+                    </div>
+                    <svg class="more_hover" width="39" height="41" viewBox="0 0 39 41" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.4872 17.5351H39V23.5496H22.4872V41H16.5128V23.5496H0V17.5351H16.5128V0H22.4872V17.5351Z"
+                            fill="var(--clr__3)" />
+                    </svg>
+                    <svg class="more_not_hover" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.84 23.28H34.8V26.12H26.84V34.36H23.96V26.12H16V23.28H23.96V15H26.84V23.28Z"
+                            fill="var(--clr__1)" />
+                        <rect x="0.5" y="0.5" width="49" height="49" stroke="var(--clr__1)" />
+                    </svg>
+                </a>
+
+                <a href="#" class="pf_grid_item pf_5">
+                    <div class="bg"></div>
+                    <div class="item_text">
+                        <p class="roller">Silky Kiss</p>
+                        <p class="category">Branding</p>
+                    </div>
+                    <svg class="more_hover" width="39" height="41" viewBox="0 0 39 41" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.4872 17.5351H39V23.5496H22.4872V41H16.5128V23.5496H0V17.5351H16.5128V0H22.4872V17.5351Z"
+                            fill="var(--clr__3)" />
+                    </svg>
+                    <svg class="more_not_hover" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.84 23.28H34.8V26.12H26.84V34.36H23.96V26.12H16V23.28H23.96V15H26.84V23.28Z"
+                            fill="var(--clr__1)" />
+                        <rect x="0.5" y="0.5" width="49" height="49" stroke="var(--clr__1)" />
+                    </svg>
+                </a>
+
+                <a href="#" class="pf_grid_item pf_6">
+                    <div class="bg"></div>
+                    <div class="item_text">
+                        <p class="roller">/GLRY</p>
+                        <p class="category">Web Design</p>
+                    </div>
+                    <svg class="more_hover" width="39" height="41" viewBox="0 0 39 41" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.4872 17.5351H39V23.5496H22.4872V41H16.5128V23.5496H0V17.5351H16.5128V0H22.4872V17.5351Z"
+                            fill="var(--clr__3)" />
+                    </svg>
+                    <svg class="more_not_hover" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.84 23.28H34.8V26.12H26.84V34.36H23.96V26.12H16V23.28H23.96V15H26.84V23.28Z"
+                            fill="var(--clr__1)" />
+                        <rect x="0.5" y="0.5" width="49" height="49" stroke="var(--clr__1)" />
+                    </svg>
+                </a>
+
+                <a href="" class="pf_grid_item pf_7">
+                    <div class="bg"></div>
+                    <div class="item_text">
+                        <p class="roller">The Shield Bearers</p>
+                        <p class="category">Game App</p>
+                    </div>
+                    <svg class="more_hover" width="39" height="41" viewBox="0 0 39 41" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.4872 17.5351H39V23.5496H22.4872V41H16.5128V23.5496H0V17.5351H16.5128V0H22.4872V17.5351Z"
+                            fill="var(--clr__3)" />
+                    </svg>
+                    <svg class="more_not_hover" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.84 23.28H34.8V26.12H26.84V34.36H23.96V26.12H16V23.28H23.96V15H26.84V23.28Z"
+                            fill="var(--clr__1)" />
+                        <rect x="0.5" y="0.5" width="49" height="49" stroke="var(--clr__1)" />
+                    </svg>
+                </a>
+
+                <a href="" class="pf_grid_item pf_8">
+                    <div class="bg"></div>
+                    <div class="item_text">
+                        <p class="roller">Logofolio</p>
+                        <p class="category">En Vrac</p>
+                    </div>
+                    <svg class="more_hover" width="39" height="41" viewBox="0 0 39 41" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.4872 17.5351H39V23.5496H22.4872V41H16.5128V23.5496H0V17.5351H16.5128V0H22.4872V17.5351Z"
+                            fill="var(--clr__3)" />
+                    </svg>
+                    <svg class="more_not_hover" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.84 23.28H34.8V26.12H26.84V34.36H23.96V26.12H16V23.28H23.96V15H26.84V23.28Z"
+                            fill="var(--clr__1)" />
+                        <rect x="0.5" y="0.5" width="49" height="49" stroke="var(--clr__1)" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container_contact" id="contact">
+
+        <div class="section_title">
+            <div class="section_title_left">
+                <p>06.</p>
+            </div>
+
+            <div class="section_title_right">
+                <h2>Contact<span>*</span></h2>
+            </div>
+        </div>
+
+
+        <div class="contact_inner">
+
+            <div class="left">
+                <div class="socials">
+                    <h3>Réseaux sociaux</h3>
+                    <a href="google.com">
+                        <p>Instagram</p>
+                        <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                                fill="var(--clr__2)" />
+                        </svg>
+                    </a>
+                    <a href="google.com">
+                        <p>Behance</p>
+                        <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                                fill="var(--clr__2)" />
+                        </svg>
+                    </a>
+                    <a href="google.com">
+                        <p>Dribbble</p>
+                        <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                                fill="var(--clr__2)" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <p class="inner_contact_text"> <span class="tabulation">________</span>
+                    Si vous voulez un devis ou posez une simple question n'hesitez pas a m'envoyer un message avec
+                    le
+                    formulaire ci-dessous !
+                    Je tacherais de vous répondre le plus rapidement possible et nous pourrons voir comment vous
+                    aidez
+
+                    <div class="form">
+                        <div class="form_line">
+                            <input type="text" placeholder="Nom">
+                            <input type="text" placeholder="Prénom">
+                        </div>
+                        <div class="form_line">
+                            <input type="text" placeholder="E-mail">
+                            <input type="text" placeholder="Tel">
+                        </div>
+                        <textarea name="message" id="mesasage" placeholder="Message"></textarea>
+
+                        <button>Envoyer</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>MERCI</h4>
+        <div class="legals">
+            <a href="#">Mentions légales</a>
+            <svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                <rect width="96" height="96" fill="var(--clr__2)" class="will_recolor" />
+            </svg>
+            <a href="#">Politique de confidentialité</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  modal                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="modal_project mover" id="modal_1">
+        <div class="modal_title">
+            NOISE
+        </div>
+
+        <div class="cover_modal"></div>
+
+        <div class="close_modal close_modal_GLRY">
+            X
+        </div>
+
+        <div class="modal_description">
+            Projet de lecteur de musique personnalisable, uploadé VOS musique pour les emporter avec vous. </div>
+
+        <a href="projects/NOISE.html" class="modal_goto" style="text-decoration: none;">
+            Voir plus
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                    fill="var(--clr__2)" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="modal_project mover" id="modal_2">
+        <div class="modal_title">
+            City Lights
+        </div>
+        <div class="cover_modal"></div>
+
+        <div class="close_modal close_modal_GLRY">
+            X
+        </div>
+
+        <div class="modal_description">
+            Agence de voyage spécialisé dans le monde de la nuit.
+        </div>
+
+        <a href="projects/city_lights.html" class="modal_goto" style="text-decoration : none">
+            Voir plus
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                    fill="var(--clr__2)" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="modal_project mover" id="modal_3">
+        <div class="modal_title">
+            3
+        </div>
+        <div class="cover_modal"></div>
+        <div class="close_modal close_modal_GLRY">
+            X
+        </div>
+
+        <div class="modal_description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quae saepe odio accusamus itaque? Et.
+        </div>
+
+        <button class="modal_goto">
+            Voir plus
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                    fill="var(--clr__2)" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="modal_project mover" id="modal_4">
+        <div class="modal_title">
+            Softly Brutal
+        </div>
+        <div class="cover_modal"></div>
+        <div class="close_modal close_modal_GLRY">
+            X
+        </div>
+
+        <div class="modal_description">
+            Site de promotion de l'architecture brutaliste, chere a notre patrimoine local.
+        </div>
+
+        <a href="projects/soflty_brutal.html" class="modal_goto" style="text-decoration : none">
+            Voir plus
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                    fill="var(--clr__2)" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="modal_project mover" id="modal_5">
+        <div class="modal_title">
+            Silky Kiss
+        </div>
+        <div class="cover_modal"></div>
+        <div class="close_modal close_modal_GLRY">
+            X
+        </div>
+
+        <div class="modal_description">
+            Branding pour une marque de savon bio venu de malaisie.
+        </div>
+
+        <a href="projects/silkykiss.html" class="modal_goto" style="text-decoration: none;">
+            Voir plus
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                    fill="var(--clr__2)" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="modal_project mover" id="modal_6">
+        <div class="modal_title">
+            /GLRY
+        </div>
+
+        <div class="cover_modal"></div>
+
+        <div class="close_modal close_modal_GLRY">
+            X
+        </div>
+
+        <div class="modal_description">
+            Site de partage d'image a destination des photographe spécialisé dans le noir & blanc.
+        </div>
+
+        <a href="projects/glry.html" style="text-decoration : none !important;" class="modal_goto">
+            Voir plus
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                    fill="var(--clr__2)" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="modal_project mover" id="modal_7">
+        <div class="modal_title">
+            The Shield Bearers
+        </div>
+        <div class="cover_modal"></div>
+        <div class="close_modal close_modal_GLRY">
+            X
+        </div>
+
+        <div class="modal_description">
+            Jeu vidéo sur navigateur et app mobile
+        </div>
+
+        <a href="projects/TSB_2.html" style="text-decoration : none !important;" class="modal_goto">
+            Voir plus
+            <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
+                    fill="var(--clr__2)" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="modal_project mover " id="modal_8">
+        <div class="modal_title">
+            LOGOFOLIO
+        </div>
+        <div class="close_modal close_modal_GLRY">
+            X
+        </div>
+
+        <div class="logofolio_inner">
+            <div class="main_logofolio">
+
+                <div class="logo_elem" style="background-image:url('assets/logo/nb/clnb.jpg');"
+                    data-img="url('assets/logo/couleurs/clcl.jpg')"></div>
+
+                <div class="logo_elem" style="background-image:url('assets/logo/nb/emergencenb.jpg');"
+                    data-img="url('assets/logo/couleurs/emcl.jpg"></div>
+
+                <div class="logo_elem" style="background-image:url('assets/logo/nb/nasanb.jpg');"
+                    data-img="url('assets/logo/couleurs/nasacl.jpg"></div>
+
+                <div class="logo_elem" style="background-image:url('assets/logo/nb/siemensnb.jpg');"
+                    data-img="url('assets/logo/couleurs/siemenscl.png"></div>
+
+                <div class="logo_elem" style="background-image:url('assets/logo/nb/sknb.png');"
+                    data-img="url('assets/logo/couleurs/skcl.jpg')"></div>
+
+                <div class="logo_elem" style="background-image:url('assets/logo/nb/smnb.jpg');"
+                    data-img="url('assets/logo/couleurs/smcl.jpg')"></div>
+
+                <div class="logo_elem" style="background-image:url('assets/logo/nb/tsbnb.png');"
+                    data-img="url('assets/logo/couleurs/tsbcl.png')"></div>
+
+                <div class="logo_elem" style="background-image:url('assets/logo/nb/wtnb.jpg');"
+                    data-img="url('assets/logo/couleurs/wtcl.png')"></div>
+
+                <div class="logo_elem" style="background-image:url('assets/logo/nb/zcnb.jpg');"
+                    data-img="url('assets/logo/couleurs/zccl.jpg')"></div>
+
+            </div>
+
+            <div class="logo_view">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="assets/script/marquee.js"></script>
+    <script src="assets/script/shuffle.js"></script>
+    <script src="assets/script/main.js"></script> -->
+    <script src="assets/script/move_modal.js"></script>
+
+    <script>
+        // anim on load
+        let onload_tl = gsap.timeline({
+            delay: .4
+        });
+
+        // Wrapper du titre
+        var textWrapper = document.querySelectorAll(".big_title");
+        textWrapper.forEach((item, index) => {
+            item.innerHTML = item.textContent.replace(
+                /\S/g,
+                "<span class='letter'>$&</span>"
+            );
+        });
+
+        var textWrapper = document.querySelectorAll(".bienvenue");
+        textWrapper.forEach((item, index) => {
+            item.innerHTML = item.textContent.replace(
+                /\S/g,
+                "<span class='letter_bienvenue'>$&</span>"
+            );
+        });
+
+        onload_tl.from('.name_nav', {
+            x: -300,
+            opacity: 0,
+            ease: Expo.easeOut,
+            duration: 1.2
+        }, 0)
+
+        onload_tl.from('.header_img', {
+            y: 320,
+            duration: 2,
+            opacity: 0,
+            ease: Power4.easeOut
+        }, 1)
+
+        onload_tl.from('.letter', {
+            y: 400,
+            ease: Power2.easeInOut,
+            duration: .6,
+            stagger: .1
+        }, 2)
+
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to('.big_title', {
+            y: -300,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: '.big_title',
+                start: 'top 10%',
+                scrub: true,
+            }
+        })
+
+        gsap.to('.header_img', {
+            width: 100 + 'vw',
+            marginLeft: 0,
+            scrollTrigger: {
+                trigger: '.header_img',
+                start: 'top 70%',
+                end: 'top 28%',
+                scrub: true
+            }
+        })
+
+        gsap.from('.letter_bienvenue', {
+            y: 220,
+            stagger: .2,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: '.bienvenue',
+                start: 'top bottom',
+                end: 'top 30%',
+                scrub: true
+            }
+        });
+
+        gsap.to('.bienvenue', {
+            y: -180,
+            stagger: .2,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: '.bienvenue',
+                start: 'top 18%',
+                end: 'top top',
+                scrub: true
+            }
+        });
+
+        gsap.from('.header_line', {
+            y: -120,
+            stagger: -.2,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: '.true_header_container',
+                start: 'top top',
+                scrub: false
+            }
+        })
+    </script>
+</body>
+
+</html>

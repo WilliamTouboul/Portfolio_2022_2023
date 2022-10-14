@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 400;
 }
 
 .spacer {
@@ -13,6 +14,8 @@
 html,
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 img {
@@ -27,7 +30,7 @@ img {
 
 @font-face {
     font-family: 'another';
-    src: url(../fonts/another.ttf);
+    src: url(../fonts/ppmontreal/PPNeueMontreal-Book.otf);
 }
 
 @font-face {
@@ -119,13 +122,10 @@ h3 {
     }
 }
 
-
 ::selection {
     color: var(--clr__3);
     background-color: var(--clr__2);
 }
-
-
 
 /* --------------------------------- Scroll --------------------------------- */
 ::-webkit-scrollbar {
@@ -180,8 +180,8 @@ h3 {
 /* -------------------------------------------------------------------------- */
 .menu {
     position: fixed;
-    right: 4rem;
-    top: 2rem;
+    right: 12rem;
+    top: 4rem;
     width: 12rem;
     height: 6rem;
     display: flex;
@@ -230,8 +230,7 @@ h3 {
     height: 43rem;
     width: 80rem;
     top: -200%;
-
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--clr__2);
     z-index: 999999999;
     cursor: grab;
@@ -326,8 +325,6 @@ h3 {
     color: var(--clr__2)
 }
 
-
-
 .color_pickers {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -383,7 +380,6 @@ h3 {
 
 }
 
-
 .close {
     font-size: 3rem;
     height: 3rem;
@@ -412,59 +408,64 @@ h3 {
 /* -------------------------------------------------------------------------- */
 
 .container_header {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
-.header_top_left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 40px;
-}
-
-.title_section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.title_section .square_1 {
-    height: 25px;
-    width: 25px;
-    background-color: var(--clr__2);
-    margin-right: 2rem;
-}
-
-.header_top_left h1 {
-    font-size: 10rem;
+.container_header h1 {
     font-family: 'another';
+    font-size: 64px;
+    margin-left: 12rem;
+    margin-top: 4rem;
+}
+
+.container_main_header {
+    height: 80vh;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 96px;
+    margin-bottom: 48px;
 }
 
-.title_section p,
-.based {
-    font-size: 6rem;
-    font-family: 'lacoste';
-}
-
-.based span {
+.container_main_header p strong {
+    font-weight: 400;
     color: var(--clr__2)
 }
 
-
-.banner {
-    display: none;
+.header_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--clr__1);
+    font-family: 'another';
+    gap: 4rem;
 }
+
+.fiesta_container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_fiesta {
+    background-image: url('../img/projects/citylights/grid.jpg');
+    width: 60vw;
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+
+}
+
 
 /* --------------------------------- marquee -------------------------------- */
 
 
 .marquee {
-    position: absolute;
-    bottom: 0;
     height: auto;
     overflow: hidden;
     width: 100vw;
@@ -514,8 +515,8 @@ h3 {
 .container_about {
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 12rem;
+    padding-right: 12rem;
     padding-top: 6rem;
 }
 
@@ -535,16 +536,15 @@ h3 {
 
 .section_title_right {
     width: 82%;
-    height: 35rem;
+    height: 25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    border-bottom: 1px dashed var(--clr__1)
 }
 
 .section_title_right h2 {
-    font-family: 'lacoste';
+    font-family: 'another';
     font-size: 10rem;
     color: var(--clr__2);
     position: relative;
@@ -564,16 +564,12 @@ h3 {
 /* -------------------------------- services -------------------------------- */
 .services_inner {
     padding-left: 18%;
-    border-bottom: 1px var(--clr__1) dashed;
-
 }
 
 .services_card_container {
-    height: 600px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    border-top: 1px var(--clr__1) dashed;
     padding-top: 8rem;
     padding-bottom: 8rem;
 }
@@ -650,16 +646,14 @@ h3 {
     padding-left: 18%;
     padding-top: 4rem;
     display: flex;
-    flex-direction: row;
-    border-bottom: 1px dashed var(--clr__1);
+    flex-direction: column;
     padding-bottom: 10rem;
 }
 
 .about_inner_left {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    padding-right: 16rem;
+    width: 100%;
 }
 
 .about_inner_left p:first-child {
@@ -667,6 +661,7 @@ h3 {
     font-size: 2rem;
     font-family: 'another';
     text-align: justify;
+    line-height: 160%;
 }
 
 .tabulation {
@@ -687,59 +682,40 @@ h3 {
     font-family: 'another';
     margin-top: 10rem;
     font-weight: 800;
-
 }
 
-.more_infos {
-    width: 24rem;
-    height: 5rem;
+
+.about_down {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    font-size: 2rem;
-    font-family: 'another';
-    color: var(--clr__2);
-    border: 1px var(--clr__2) solid;
-    background-color: transparent;
-    margin-top: 2rem;
-    transition: all .2s ease-in;
-    cursor: pointer;
+    margin-top: 8rem;
+    justify-content: space-between;
 }
 
-.more_infos svg {
-    height: 2rem;
-    width: 2rem;
-    transform: rotate(180deg);
-    margin-left: 2rem;
-}
-
-.more_infos:hover {
-    background-color: var(--clr__2);
-    color: var(--clr__3);
-}
-
-.more_infos:hover img {
-    filter: invert(88%) sepia(21%) saturate(935%) hue-rotate(143deg) brightness(85%) contrast(978%);
+.illus_about {
+    width: 42%;
+    background-image: url('../img/projects/glry/maing.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 .about_inner_right {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 42%;
 }
 
 .about_inner_right h3 {
     background-color: var(--clr__2);
     color: var(--clr__3);
-    width: 8rem;
+    max-width: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    padding: 0.8rem 1.2rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
     font-family: 'another';
-    font-weight: 800;
+    font-weight: 800 !important;
 }
 
 .tech_tabs {
@@ -755,7 +731,7 @@ h3 {
 .tech_tabs p {
     text-transform: uppercase;
     font-family: 'another';
-    font-size: 1.2rem;
+    font-size: 2rem;
     display: flex;
     height: 4rem;
     align-items: center;
@@ -844,8 +820,6 @@ h3 {
 .section_inner_portfolio {
     padding-left: 18%;
     padding-bottom: 11rem;
-    border-bottom: 1px var(--clr__1) dashed;
-
 }
 
 .section_inner_portfolio>p {
@@ -955,7 +929,6 @@ h3 {
 .contact_inner {
     display: flex;
     flex-direction: row;
-    border-bottom: 1px var(--clr__1) dashed;
     padding-bottom: 15rem;
 }
 
@@ -1322,9 +1295,6 @@ h3 {
 
 }
 
-
-
-
 .anim_title {
     display: flex;
     flex-direction: row;
@@ -1363,9 +1333,91 @@ h3 {
     animation: reveal_images .8s linear forwards;
 }
 
-
-
 .gundam {
     width: 50vw !important;
     margin-left: 25vw !important;
+}
+
+#modal_8 {
+    width: 80vw;
+    height: 70vh;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+#modal_8 .modal_title {
+    position: absolute;
+    top: 4rem;
+    left: 8rem;
+}
+
+#modal_8 .close_modal {
+    right: 8rem;
+    top: 4rem;
+}
+
+.logofolio_inner {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_logofolio {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    overflow: scroll;
+}
+
+.logo_elem {
+    height: 120px;
+    width: 120px;
+    background-color: red;
+    background-size: cover;
+}
+
+.logo_view {
+    width: 60%;
+    background-image: url('../logo/couleurs/cs.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 760px) {
+
+    #modal_8 {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        height: 90vh;
+    }
+
+    #modal_8 .modal_title {
+        left: 2rem;
+        top: 2rem;
+    }
+
+    #modal_8 .close_modal {
+        right: 2rem;
+        top: 2.5rem;
+    }
+
+    .main_logofolio {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .logo_view {
+        height: 100%;
+        width: 100%;
+    }
+
+    .logofolio_inner {
+
+        flex-direction: column;
+    }
 }

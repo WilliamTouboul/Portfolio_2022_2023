@@ -211,10 +211,11 @@
         margin-bottom: 4rem;
     }
 
-    .services_card h3{
+    .services_card h3 {
         font-size: 3rem;
     }
-    .services_card p{
+
+    .services_card p {
         font-size: 1.5rem;
     }
 }
@@ -223,5 +224,19 @@
 @media (max-width : 1450px) {
     .modal_project {
         width: 32rem;
+    }
+}
+
+
+
+
+
+@media (min-width : 2200px) {
+    html {
+        font-size: 14px;
+    }
+
+    .dashed_line {
+        width: 90vw;
     }
 }
