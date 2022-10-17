@@ -1,0 +1,35 @@
+@media screen and (max-width : 769px) {
+    .container_main_header {
+        font-size: 60px;
+    }
+
+    html {
+        font-size: 8px;
+    }
+
+    .header_line svg {
+        height: 40px;
+        width: 40px;
+    }
+
+    .section_title_left p,
+    .section_title_right h2 {
+        font-size: 8rem;
+        margin-bottom: 4rem;
+    }
+
+
+    section {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+
+    .pf_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer {
+        margin-right: 12rem;
+        margin-left: 12rem;
+    }
+}

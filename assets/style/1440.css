@@ -1,0 +1,10 @@
+@media screen and (max-width : 1441px) {
+    html {
+        font-size: 8px;
+    }
+
+    section {
+        padding-left: 28rem;
+        padding-right: 28rem;
+    }
+}

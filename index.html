@@ -9,7 +9,6 @@
     <link rel="icon" href="assets/icons/rect.svg" type="image/png">
     <!-- Style -->
     <link rel="stylesheet" href="assets/style/index.css">
-    <link rel="stylesheet" href="assets/style/responsive.css">
     <!-- Retouche -->
     <link rel="stylesheet" href="assets/style/v2.css">
     <!-- Responsive -->
@@ -30,162 +29,28 @@
     </h1>
 
     <div class="menu">
-        <p class="roller">Menu</p>
-        <svg class="menu_corner mc_1" width="15" height="12" viewBox="0 0 15 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line x1="1" y1="0.5" x2="14.7926" y2="0.5" stroke="var(--clr__1)" />
-            <line x1="0.5" y1="12" x2="0.5" stroke="var(--clr__1)" />
-        </svg>
-
-        <svg class="menu_corner mc_2" width="15" height="12" viewBox="0 0 15 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line y1="-0.5" x2="13.7926" y2="-0.5" transform="matrix(1 0 0 -1 1 11)" stroke="var(--clr__1)" />
-            <line y1="-0.5" x2="12" y2="-0.5" transform="matrix(0 1 1 0 1 0)" stroke="var(--clr__1)" />
-        </svg>
-
-        <svg class="menu_corner mc_3" width="15" height="12" viewBox="0 0 15 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line y1="-0.5" x2="13.7926" y2="-0.5" transform="matrix(-1 0 0 1 14 1)" stroke="var(--clr__1)" />
-            <line y1="-0.5" x2="12" y2="-0.5" transform="matrix(0 -1 -1 0 14 12)" stroke="var(--clr__1)" />
-        </svg>
-
-        <svg class="menu_corner mc_4" width="15" height="12" viewBox="0 0 15 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line x1="14" y1="11.5" x2="0.207407" y2="11.5" stroke="var(--clr__1)" />
-            <line x1="14.5" x2="14.5" y2="12" stroke="var(--clr__1)" />
-        </svg>
+        <img src="assets/icons/hamburger.png" alt="">
     </div>
 
-    <div class="opened_menu mover" id="dragMe">
-        <svg class="menu_corner mc_1" width="15" height="12" viewBox="0 0 15 12" fill="none"
+    <div class="menu_open">
+        <svg class="close" width="39" height="41" viewBox="0 0 39 41" fill="var(--clr__3)"
             xmlns="http://www.w3.org/2000/svg">
-            <line x1="1" y1="0.5" x2="14.7926" y2="0.5" stroke="var(--clr_3)" />
-            <line x1="0.5" y1="12" x2="0.5" stroke="var(--clr_3)" />
+            <path d="M22.4872 17.5351H39V23.5496H22.4872V41H16.5128V23.5496H0V17.5351H16.5128V0H22.4872V17.5351Z"
+                fill="var(--clr__3)" />
         </svg>
 
-        <svg class="menu_corner mc_2" width="15" height="12" viewBox="0 0 15 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line y1="-0.5" x2="13.7926" y2="-0.5" transform="matrix(1 0 0 -1 1 11)" stroke="var(--clr_3)" />
-            <line y1="-0.5" x2="12" y2="-0.5" transform="matrix(0 1 1 0 1 0)" stroke="var(--clr_3)" />
-        </svg>
-
-        <svg class="menu_corner mc_3" width="15" height="12" viewBox="0 0 15 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line y1="-0.5" x2="13.7926" y2="-0.5" transform="matrix(-1 0 0 1 14 1)" stroke="var(--clr_3)" />
-            <line y1="-0.5" x2="12" y2="-0.5" transform="matrix(0 -1 -1 0 14 12)" stroke="var(--clr_3)" />
-        </svg>
-
-        <svg class="menu_corner mc_4" width="15" height="12" viewBox="0 0 15 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line x1="14" y1="11.5" x2="0.207407" y2="11.5" stroke="var(--clr_3)" />
-            <line x1="14.5" x2="14.5" y2="12" stroke="var(--clr_3)" />
-        </svg>
-
-        <p class="roller">Menu</p>
-
-        <div class="opened_inside">
-            <a href="#home" class="o_i_item">
-                <div class="bg"></div>
-                <p class="left">
-                    <span>01.</span>
-                    ACCUEIL
-                </p>
-
-                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
-                        fill="var(--clr__3)" />
-                </svg>
-            </a>
-
-            <a href="#about" class="o_i_item">
-                <div class="bg"></div>
-                <p class="left">
-                    <span>02.</span>
-                    A PROPOS
-                </p>
-
-                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
-                        fill="var(--clr__3)" />
-                </svg>
-            </a>
-
-            <a href="#services" class="o_i_item">
-                <div class="bg"></div>
-                <p class="left">
-                    <span>03.</span>
-                    SERVICES
-                </p>
-
-                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
-                        fill="var(--clr__3)" />
-                </svg>
-            </a>
-
-            <a href="#gallery" class="o_i_item">
-                <div class="bg"></div>
-
-                <p class="left">
-                    <span>04.</span>
-                    GALERIE
-                </p>
-
-                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
-                        fill="var(--clr__3)" />
-                </svg>
-            </a>
-
-            <a href="#portfolio" class="o_i_item">
-                <div class="bg"></div>
-
-                <p class="left">
-                    <span>05.</span>
-                    PORTFOLIO
-                </p>
-
-                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
-                        fill="var(--clr__3)" />
-                </svg>
-            </a>
-            <a href="#contact" class="o_i_item">
-                <div class="bg"></div>
-
-                <p class="left">
-                    <span>06.</span>
-                    CONTACT
-                </p>
-                <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
-                        fill="var(--clr__3)" />
-                </svg>
-            </a>
-
-            <div class="close">
-                X
-            </div>
+        <ul>
+            <li><a href="">A propos</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="socials">
+            <a href="#">LinkedIn</a>
+            <a href="#">Dribbble</a>
+            <a href="#">Behance</a>
+            <a href="#">Instagram</a>
         </div>
-
-        <div class="color_pickers">
-            <div class="picker picker_1"></div>
-            <div class="picker picker_2"></div>
-            <div class="picker picker_3"></div>
-        </div>
-
-        <div class="menu_socials">
-            <div><a href="#">Instagram</a></div>
-            <div><a href="#">Behance</a></div>
-            <div><a href="#">Dribbble</a></div>
-        </div>
-
     </div>
 
     <div class="big_title_wrapper">
@@ -410,7 +275,7 @@
 
         <div class="section_inner_portfolio">
             <p>
-                <span class="tabulation">________</span> Site vitrine, App, Développement, Print... Voici une selection
+                Site vitrine, App, Développement, Print... Voici une selection
                 de mes travaux :
             </p>
             <div class="pf_grid">
@@ -520,45 +385,10 @@
                 <h2>Contact<span>*</span></h2>
             </div>
         </div>
-
-
         <div class="contact_inner">
-
-            <!-- <div class="left">
-                <div class="socials">
-                    <h3>Réseaux sociaux</h3>
-                    <a href="google.com">
-                        <p>Instagram</p>
-                        <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
-                                fill="var(--clr__2)" />
-                        </svg>
-                    </a>
-                    <a href="google.com">
-                        <p>Behance</p>
-                        <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
-                                fill="var(--clr__2)" />
-                        </svg>
-                    </a>
-                    <a href="google.com">
-                        <p>Dribbble</p>
-                        <svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M61.1423 1.70711C61.5328 1.31658 61.5328 0.683417 61.1423 0.292893C60.7518 -0.0976311 60.1186 -0.0976311 59.7281 0.292893L59.5858 0.435185H59H2H0V2.43519V59.4352V61.4352H2H59H61V59.4352V2.43519V1.8494L61.1423 1.70711ZM57.5858 2.43519L17.9444 42.0765V8.24846C17.9444 7.69617 17.4967 7.24846 16.9444 7.24846C16.3922 7.24846 15.9444 7.69617 15.9444 8.24846V44.4907C15.9444 44.5068 15.9448 44.5228 15.9456 44.5387C15.957 44.7784 16.0543 45.0148 16.2373 45.1978C16.3332 45.2937 16.4437 45.3661 16.5617 45.4149C16.6796 45.4638 16.8089 45.4907 16.9444 45.4907H53.1867C53.739 45.4907 54.1867 45.043 54.1867 44.4907C54.1867 43.9385 53.739 43.4907 53.1867 43.4907H19.3587L59 3.8494V59.4352H2V2.43519H57.5858Z"
-                                fill="var(--clr__2)" />
-                        </svg>
-                    </a>
-                </div>
-            </div> -->
-
             <div class="right">
-                <p class="inner_contact_text"> <span class="tabulation">________</span>
+                <p class="inner_contact_text"> 
+
                     Si vous voulez un devis ou posez une simple question n'hesitez pas a m'envoyer un message avec
                     le
                     formulaire ci-dessous !
@@ -595,12 +425,24 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="assets/script/marquee.js"></script>
     <script src="assets/script/shuffle.js"></script>
-    <script src="assets/script/main.js"></script> -->
-    <script src="assets/script/move_modal.js"></script>
+    <script src="assets/script/main.js"></script>
+    <!-- NAV -->
+    <script>
+        let button = document.querySelector('.menu');
+        let nav = document.querySelector('.menu_open');
+        let close_button = document.querySelector('.close');
 
+        button.addEventListener('click', function () {
+            nav.style.top = '0';
+        });
+
+        close_button.addEventListener('click', function () {
+            nav.style.top = '-100%'
+        })
+    </script>
+    <!-- ANIM ONLOAD -->
     <script>
         // anim on load
         let onload_tl = gsap.timeline({
@@ -704,6 +546,7 @@
             }
         })
     </script>
+    <!-- ANIM ONSCROLL -->
     <script>
         window.addEventListener('scroll', function () {
             if (window.scrollY > 80) {

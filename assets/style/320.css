@@ -1,0 +1,23 @@
+@media screen and (max-width : 321px) {
+    h1 {
+        font-size: 3rem !important;
+    }
+
+    .header_line {
+        font-size: 36px;
+    }
+
+    .pf_grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .footer {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
