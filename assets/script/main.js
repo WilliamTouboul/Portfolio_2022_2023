@@ -66,47 +66,47 @@ menu_close.addEventListener('click', function () {
 })
 
 
-let modal_open_1 = true;
-let modal_open_2 = true;
-let modal_open_3 = true;
-let modal_open_4 = true;
-let modal_open_5 = true;
-let modal_open_6 = true;
-let modal_open_7 = true;
-let modal_open_8 = true;
+// let modal_open_1 = true;
+// let modal_open_2 = true;
+// let modal_open_3 = true;
+// let modal_open_4 = true;
+// let modal_open_5 = true;
+// let modal_open_6 = true;
+// let modal_open_7 = true;
+// let modal_open_8 = true;
 
-for (i = 1; i <= 8; i++) {
-    let target_modal = 'modal_open_' + i
-    let close_modal = "#modal_" + i + " .close_modal"
-    let anim_target = '#modal_' + i
-    document.querySelector('.pf_' + i).addEventListener('click', function (e) {
-        e.preventDefault();
-        if (target_modal) {
-            target_modal = !target_modal;
-            gsap.to(anim_target, {
-                top: 2 + 'rem',
-                left: i++ + '%',
-            })
+// for (i = 1; i <= 8; i++) {
+//     let target_modal = 'modal_open_' + i
+//     let close_modal = "#modal_" + i + " .close_modal"
+//     let anim_target = '#modal_' + i
+//     document.querySelector('.pf_' + i).addEventListener('click', function (e) {
+//         e.preventDefault();
+//         if (target_modal) {
+//             target_modal = !target_modal;
+//             gsap.to(anim_target, {
+//                 top: 2 + 'rem',
+//                 left: i++ + '%',
+//             })
 
-        } else {
-            target_modal = !target_modal;
-            gsap.to(anim_target, {
-                top: -200 + '%',
-                left: -200 + '%'
-            })
-        }
-    });
+//         } else {
+//             target_modal = !target_modal;
+//             gsap.to(anim_target, {
+//                 top: -200 + '%',
+//                 left: -200 + '%'
+//             })
+//         }
+//     });
 
-    document.querySelector(close_modal).addEventListener('click', function () {
-        target_modal = !target_modal;
-        gsap.to(
-            gsap.to(anim_target, {
-                top: -200 + '%',
-                left: -200 + '%'
-            })
-        );
-    })
-}
+//     document.querySelector(close_modal).addEventListener('click', function () {
+//         target_modal = !target_modal;
+//         gsap.to(
+//             gsap.to(anim_target, {
+//                 top: -200 + '%',
+//                 left: -200 + '%'
+//             })
+//         );
+//     })
+// }
 
 
 
