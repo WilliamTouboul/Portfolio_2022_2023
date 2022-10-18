@@ -257,6 +257,10 @@ h3 {
     font-size: 8rem;
 }
 
+.menu_open ul li a span{
+    font-size: 4rem;
+    margin-right: 4rem;
+}
 .menu_open ul li a {
     color: var(--clr__3);
     text-decoration: none;
